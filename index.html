@@ -10,32 +10,18 @@
 <body>
   <div id="app"></div>
   <script>
+    // Docsify 配置
+    // 这是 Docsify 项目的基本配置，包括项目名称和仓库地址
     window.$docsify = {
       name: 'HowToCook',
       repo: 'Anduin2017/HowToCook'
     }
   </script>
   <!-- Docsify 主脚本 CDN -->
+  <!-- 这是 Docsify 框架的核心 JavaScript 文件，用于渲染文档 -->
   <script src="//cdn.jsdelivr.net/npm/docsify@4"></script>
-</body>
-</html>
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>HowToCook</title>
-  <script>
-    (function() {
-      var password = "1222"; // 你要设置的数字密码
-      var pass = prompt("请输入访问密码：");
-      if (pass !== password) {
-        document.body.innerHTML = "<h1>密码错误，禁止访问。</h1>";
-      }
-    })();
-  </script>
-</head>
-<body>
-  <!-- 你的原有内容在这里，比如 docsify 的 <div id="app"></div> 等 -->
-  <div id="app"></div>
+  <!-- 引入自定义脚本用于滚动到顶部 -->
+  <!-- 这个脚本将处理页面内部导航时的滚动问题 -->
+  <script src="scroll-fix.js"></script>
 </body>
 </html>
